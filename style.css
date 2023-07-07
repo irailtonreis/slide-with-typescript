@@ -30,18 +30,18 @@ h1 {
   visibility: visible;
 }
 
-#slide{
+#slide {
   display: grid;
 }
 
-#slide-controls{
+#slide-controls {
   grid-area: 1/1;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-#slide-controls button{
+#slide-controls button {
   opacity: 0;
   appearance: none;
-  -webkit-tap-highlight-color:rgb(0, 0, 0)
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
