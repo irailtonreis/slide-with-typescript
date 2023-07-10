@@ -86,8 +86,8 @@ export default class Slide {
     this.pausedTimeout = new Timeout(() => {
       this.paused = true
       this.timeout?.pause()
+      this.thumb?.classList.add('paused')
       if (this.slide instanceof HTMLVideoElement) this.slide.pause()
-      if(this.slide instanceof HTMLVideoElement) this.slide.pause()
     }, 300)
   }
 
@@ -97,7 +97,6 @@ export default class Slide {
       this.paused = false
       this.timeout?.continue()
       this.thumb?.classList.remove('paused')
-      if (this.slide instanceof HTMLVideoElement) this.slide.play()
       if(this.slide instanceof HTMLVideoElement) this.slide.play()
   
     }
